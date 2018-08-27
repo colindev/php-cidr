@@ -3,8 +3,6 @@
 
 require __DIR__.'/vendor/autoload.php';
 
-use colindev\cidr;
-
 $cidr = cidr\parseCIDR($argv[1]);
 $ip = cidr\parseIPv4($argv[2]);
 
