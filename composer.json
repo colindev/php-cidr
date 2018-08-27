@@ -1,0 +1,12 @@
+{
+    "name": "colindev/cidr",
+    "authors": [
+        {
+            "name": "Colin",
+            "email": "colin@mail.chungyo.net"
+        }
+    ],
+    "autoload": {
+        "files": ["bin/cidr.phar.gz"]
+    }
+}
