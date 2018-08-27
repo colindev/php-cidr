@@ -20,7 +20,7 @@ function parseCIDR($addr) {
 }
 
 class IPv4 {
-    private $masks = [
+    private static $masks = [
         32 => [0xff, 0xff, 0xff, 0xff],
         31 => [0xff, 0xff, 0xff, 0xfe],
         30 => [0xff, 0xff, 0xff, 0xfc],
@@ -72,7 +72,7 @@ class IPv4 {
     
     function mask($mask) {
         $addr = [];
-        foreach ($this->masks[$mask] as $i => $v) {
+        foreach (self::$masks[$mask] as $i => $v) {
             $addr[$i] = $this->address[$i] & $v;
         }
         return new IPv4($addr);
