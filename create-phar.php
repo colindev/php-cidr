@@ -13,7 +13,7 @@ if (file_exists($pharFile.".gz")) {
 
 $p = new Phar($pharFile);
 $p->buildFromDirectory("src/");
-$p->setDefaultStub("/main.php");
+$p->setDefaultStub("/index.php");
 $p->compress(Phar::GZ);
 
 echo "compile success!!", PHP_EOL;

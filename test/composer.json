@@ -1,0 +1,11 @@
+{
+    "repositories": [
+        {
+            "type": "vcs",
+            "url": "https://github.com/colindev/php-cidr.git"
+        }
+    ],
+    "require": {
+        "colindev/cidr": "dev-master"
+    }
+}
